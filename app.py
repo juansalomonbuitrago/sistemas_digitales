@@ -19,7 +19,7 @@ def load_defaults():
     iot = pd.read_csv("sample_data/iot_sensors.csv", parse_dates=["timestamp"])
     return erp_inv, erp_sales, erp_purch, wms, tms, iot
 
-erp_inv, erp_sales, erp_purch, wms, tms, iot = load_defaults()
+erp_inv, erp_sales, erp_purch, wms_tms, iot = load_defaults()
 
 tabs = st.tabs(["ERP","WMS","TMS","IoT","Integración (Mapa de Datos)"])
 
